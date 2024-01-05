@@ -1,0 +1,103 @@
+Level 0 -> Level 1
+
+Commands used: SSH
+
+$ ssh <username>@<remote>. Use -p to specify port
+
+
+Level 0 -> Level 1 
+password:NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+
+Level 1 -> Level 2
+Two solutions: cat < - and cat ./-
+<  takes the standard input from the file on the right and inputs it into the program on the left.
+Note: a single dot represents the current working directory, and two dots denote the parent directory. In the second case I need to specify the full location of the file 
+Password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+
+Level 2 -> Level 3
+Two solutions:
+Wrap the entire filename between quotes:
+Escape every space using backslash key: file\ name\ with\ spaces
+Password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+
+Level 3 -> Level 4
+ls -a, to show all files, including hidden files
+Password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+
+
+Level 4 -> Level 5
+find . -size 1033c ! -executable
+Password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+
+Level 5 -> Level 6
+
+Solution: du -a -b
+List size of all files (not only directories) in bytes 
+Password: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+
+Level 6 -> Level 7
+The ls -R command lists the contents of a directory recursively, meaning that it doesn't just list the target you provide for it, but also descends into every subdirectory within that target (and every subdirectory in each subdirectory, and so on.)
+
+
+Notes: ls -R -l 
+
+
+Password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+
+Level 7 -> Level 8
+ 
+Grep: The grep filter searches a file for a particular pattern of characters and displays all lines that contain that pattern. The pattern that is searched in the file is referred to as the regular expression (grep stands for global search for regular expression and printout).
+grep "millionth" data.txt
+Password: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+
+Level 8 -> Level 9
+Password: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+
+Level 9 -> Level 10
+Strings: For each file given, GNU strings prints the printable character
+       sequences that are at least 4 characters long (or the number
+       given with the options below) and are followed by an unprintable
+       character.
+Password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+
+Level 10 -> Level 11
+
+
+base64 data.txt -d
+Password: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+ 
+Level 11 -> Level 12
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+
+Useful information:
+
+
+grep (1)             - print lines that match patterns
+sort (1)             - sort lines of text files
+uniq (1)             - report or omit repeated lines
+strings (1)          - print the sequences of printable characters in files
+base64 (1)           - base64 encode/decode data and print to standard output
+tr (1)               - translate or delete characters
+tar (1)              - an archiving utility
+gzip (1)             - compress or expand files
+bzip2 (1)            - a block-sorting file compressor, v1.0.8
+xxd (1)              - make a hexdump or do the reverse.
+
+
+
+Password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+
+
+
+Level 12 -> Level 13

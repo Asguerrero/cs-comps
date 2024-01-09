@@ -1,0 +1,57 @@
+Level 0 -> Level 1
+Look at the source code. Password to the next level is hidden in the first div as a comment
+Password: g9D9cREhslqBKtcA2uocGHPfMZVzeFK6
+
+Level 1 -> Level 2
+Look at the source code. As in the previous level, the password to the next level is hidden in the first div as a comment
+Password: h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7 
+  
+Level 2 -> Level 3
+There is a pixel image with src /files/pixel.png. To solve the level go to http://natas2.natas.labs.overthewire.org/files/ where you will have access to an index of files and there is an users.txt file with the password
+Password: G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q
+
+Level 3 -> Level 4
+Hint:  Search Engine spiders always leave the links that are disallowed the robots.txt
+Go to http://natas3.natas.labs.overthewire.org/robots.txt
+Go to http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+Password: tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
+
+Level 4 -> Level 5
+Used postman to select http://natas5.natas.labs.overthewire.org/ as referer
+Password: Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD
+
+Level 5 -> Level 6
+There is a cookie called loggedin. Change value to true
+Password: fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
+
+Level 6 -> Level 7
+The password is stored in http://natas6.natas.labs.overthewire.org/includes/secret.inc
+Password: jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr
+
+Level 7 -> Level 8
+<!-- hint: password for webuser natas8 is in /etc/natas_webpass/natas8 -->
+Go to http://natas7.natas.labs.overthewire.org/index.php/index.php?page=/etc/natas_webpass/natas8
+Use the fact that the url sets the page
+This is called command injection
+Password: a6bZCNYwdKqN5cGP11ZdtPg0iImQQhAB
+
+Level 8 -> Level 9
+Decode the encondedSecret variable/string as follows: bin2hex, reverse, base_64
+Password: Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
+
+Level 9 -> Level 10
+Type ;cat /etc/natas_webpass/natas10 in the input box. In the source code, it sends the input directly to the command shell. 
+Note: For some reason however, you need to add ";". Otherwise, it doesn't work. 
+Explanation: Semicolons (as well as && and ||) are command separators. That means that each command is run, one before the next, and the output goes to the terminal.
+Password: D44EcsFkLxPIkAAKLosx8z3hxX1Z4MCE
+
+Level 10 -> Level 11
+Answer 1: Type . /etc/natas_webpass/natas11
+Answer 2: Type . /etc/natas_webpass/natas11
+Password: 1KFqoJXi6hRaPluAmk8ESDW4fSysRoIg
+
+
+Level 11 -> Level 12
+Execute natas11.php to crack OXR encryption
+Key: KNHL
+Password: YWqo0pjpcXzSIl5NMAVxg12QxeC1w9QG

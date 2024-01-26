@@ -1,0 +1,2 @@
+Target: kiyr
+Description of attack: I followed Jeff's instructions on Slack to get the IP address. I got to hello.php and uploaded web shell that I found on a public GitHub repository. That got me access
